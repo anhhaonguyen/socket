@@ -1,0 +1,99 @@
+body{
+    font-family: Tahoma sans-serif;
+}
+
+span.label {
+    width: 40%;
+    float: left;
+}
+
+.country-popop {
+    min-width: 300px;
+}
+
+input.text {
+    width: 60%;
+    padding: 5px;
+}
+
+.input-group {
+    margin: 10px 0;
+}
+
+.input-group.button-group {
+    text-align: right;
+}
+
+.input-group.button-group button {
+    height: 25px;
+    border-radius: 2px;
+    box-shadow: none;
+    border: none;
+    min-width: 40px;
+}
+
+button.accept {
+    background: #5bc0de;
+    color: #ffffff;
+}
+
+button.accept:hover, button.accept:active {
+    background-color: #269abc;
+    border-color: #1b6d85;
+}
+
+button.cancel:hover {
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+.header img {
+    width: 50%;
+}
+
+.header {
+    text-align: center;
+}
+
+.summary{
+    margin: 20px 0;
+    color: #FF3100;
+    font-weight: bold;
+}
+.current-users {
+    float: left;
+}
+
+.total-users {
+    float: right;
+}
+.country-name-wrapper {
+    min-height: 60px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.content-wrapper {
+    padding: 0 20px;
+    background: #000;
+    height: 100%;
+}
+
+.footer {
+    min-height: 60px;
+}
+
+.marquee {
+    color: red;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 10s linear;
+    margin-left: -1000px;
+    font-family: Tahoma;
+    font-size: 24px;
+    margin: 20px 0 10px;
+    display: inline-block;
+}
+
+@-webkit-keyframes rightThenLeft {
+     0%   {margin-left:0%;}
+     100%  {margin-left:100%; display: none}
+ }
