@@ -68,7 +68,7 @@
                 "country_code": countryCode
             }
             $.ajax({
-                "url": 'http://haonguyen.me:5000/create',
+                "url": 'test.php',
                 "beforeSend": function(xhrObj){
                     xhrObj.setRequestHeader("Content-Type","application/json");
                     xhrObj.setRequestHeader("Accept","application/json");
@@ -247,5 +247,3 @@
     }
 </script>
 </html>
-
-
