@@ -144,7 +144,7 @@
                 // console.log(data);
                 //create new marker
                 var marker = new google.maps.Marker({
-                    position: {"lat": data.lat, "lng": data.lng},
+                    position: {"lat": data.lat, "lng": coordinates[0]},
                     map: map,
                     icon: {
                         url: defaultIcon,
@@ -157,7 +157,7 @@
                 });
                 //amination
                 marker.setAnimation(google.maps.Animation.BOUNCE);
-                var center = new google.maps.LatLng(coordinates[1], coordinates[0]);
+                var center = new google.maps.LatLng(data.lat, data.lng);
                 // using global variable:
                 map.panTo(center);
                 //append the country name
