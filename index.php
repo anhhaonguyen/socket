@@ -140,11 +140,11 @@
                 }
                 info_window = null;
                 new_marker = null;
-                var coordinates = data.coordinates;
-                console.log(data);
+                // var coordinates = data.coordinates;
+                // console.log(data);
                 //create new marker
                 var marker = new google.maps.Marker({
-                    position: {"lat": coordinates[1], "lng": coordinates[0]},
+                    position: {"lat": data.lat, "lng": data.lng},
                     map: map,
                     icon: {
                         url: defaultIcon,
