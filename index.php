@@ -104,7 +104,6 @@
         Server.bind('message', function( payload ) {
             //log( payload );
             console.log(payload,'payload');
-            replaceAll(payload, '=', ':');
             var object = JSON.parse(payload); 
             doAnimation(object);
             //set total and current
