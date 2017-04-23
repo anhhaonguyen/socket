@@ -144,7 +144,7 @@
                 // console.log(data);
                 //create new marker
                 var marker = new google.maps.Marker({
-                    position: {"lat": data.lat, "lng": coordinates[0]},
+                    position: {"lat": data.lat, "lng": data.lng},
                     map: map,
                     icon: {
                         url: defaultIcon,
