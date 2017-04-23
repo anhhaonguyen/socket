@@ -104,15 +104,21 @@
         Server.bind('message', function( payload ) {
             //log( payload );
             console.log(payload,'payload');
-            var object = JSON.parse(payload);
+            replaceAll(payload, '=', ':');
+            var object = JSON.parse(payload); 
             doAnimation(object);
             //set total and current
-            setTotal(); //get number from server;
-            setCurrent();//get number from server;
+            setTotal(object.total); //get number from server;
+            setCurrent(object.active);//get number from server;
         });
 
         Server.connect();
     });
+    
+    function replaceAll(str, find, replace) {
+        return str.replace(new RegExp(find, 'g'), replace);
+    }
+
     function setTotal(number){
         var numberTotal = number != undefined ? number : 0;
         $('.total-users > .number-user').text(numberTotal);
