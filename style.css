@@ -56,7 +56,7 @@ button.cancel:hover {
 
 .summary{
     margin: 20px 0;
-    color: #FFFF00;
+    color: yellow;
     font-weight: bold;
 }
 .current-users {
@@ -83,7 +83,7 @@ button.cancel:hover {
 }
 
 .marquee {
-    color: #FFFF00;
+    color: yellow;
     white-space: nowrap;
     -webkit-animation: rightThenLeft 10s linear;
     margin-left: -1000px;

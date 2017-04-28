@@ -98,6 +98,7 @@
         //OH NOES! Disconnection occurred.
         Server.bind('close', function( data ) {
         //log( "Disconnected." );
+            Server.connect();
         });
 
         //Log any messages sent from server
