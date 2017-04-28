@@ -83,7 +83,7 @@ button.cancel:hover {
 }
 
 .marquee {
-    color: red;
+    color: #FFFF00;
     white-space: nowrap;
     -webkit-animation: rightThenLeft 10s linear;
     margin-left: -1000px;
