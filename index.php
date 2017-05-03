@@ -149,10 +149,10 @@
                     map: map,
                     icon: {
                         url: defaultIcon,
-                        size: new google.maps.Size(30, 30),
+                        size: new google.maps.Size(35, 35),
                         origin: new google.maps.Point(0, 0),
-                        anchor: new google.maps.Point(40, 25),
-                        scaledSize: new google.maps.Size(80, 80)
+                        anchor: new google.maps.Point(20, 12),
+                        scaledSize: new google.maps.Size(40, 40)
                     },
                     title: 'New position'
                 });
