@@ -129,8 +129,8 @@
     }
     function doAnimation(data){
         var country_code = data.country_code;
-        // $.get('https://restcountries.eu/rest/v2/alpha/' + country_code, function (resp) {
-            // if (resp.nativeName !== undefined){
+        $.get('https://restcountries.eu/rest/v2/alpha/' + country_code, function (resp) {
+            if (resp.nativeName !== undefined){
                 //hide infowindow
                 if (info_window != null){
                     info_window.setMap(null);
@@ -162,18 +162,18 @@
                 // using global variable:
                 map.panTo(center);
                 //append the country name
-                var countryName = data.country_name;
+                var countryName = resp.nativeName;
                 $('.country-name-wrapper').append('<span class="marquee">' + countryName + '</span>');
                 setTimeout(function(){
                     marker.setMap(null);
                     marker = null;
                     $('.country-name-wrapper').html('');
                 }, 10000)
-            // } else {
-            //     alert('Invalid country code!');
-            // }
+            } else {
+                alert('Invalid country code!');
+            }
 
-        // })
+        })
     }
     function initMap(){
         var latlng = new google.maps.LatLng(40.723080, -73.984340); //you can use any location as center on map startup
