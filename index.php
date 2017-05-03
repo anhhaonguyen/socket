@@ -9,8 +9,8 @@
     <div id="map_canvas" style="height:500px; width:100%;"></div>
     <div class="country-name-wrapper"></div>
     <div class="footer">
-        <div class="current-users summary">Current: <span class="number-user">0</span></div>
-        <div class="total-users summary">Total: <span class="number-user">0</span></div>
+        <div class="current-users summary">CURRENT PLAYERS: <span class="number-user">0</span></div>
+        <div class="total-users summary">TOTAL PLAYERS: <span class="number-user">0</span></div>
     </div>
 </div>
 </body>
@@ -149,10 +149,10 @@
                     map: map,
                     icon: {
                         url: defaultIcon,
-                        size: new google.maps.Size(70, 70),
+                        size: new google.maps.Size(30, 30),
                         origin: new google.maps.Point(0, 0),
                         anchor: new google.maps.Point(40, 25),
-                        scaledSize: new google.maps.Size(80, 80)
+                        scaledSize: new google.maps.Size(30, 30)
                     },
                     title: 'New position'
                 });
