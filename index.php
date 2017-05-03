@@ -152,7 +152,7 @@
                         size: new google.maps.Size(30, 30),
                         origin: new google.maps.Point(0, 0),
                         anchor: new google.maps.Point(40, 25),
-                        scaledSize: new google.maps.Size(30, 30)
+                        scaledSize: new google.maps.Size(80, 80)
                     },
                     title: 'New position'
                 });
